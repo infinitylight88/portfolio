@@ -1,8 +1,8 @@
 export const getImageUrl = (path) =>{
 
-    return new URL('/assets/$[path]', import.meta.url).href;
+    return new URL(`/assets/${path}`, import.meta.url).href;
 
-}
+};
 
 
 /* Arrow function: function name (Param) =>{
