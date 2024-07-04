@@ -1,5 +1,6 @@
 import React from 'react'
 import skills from "../../data/skills.json"
+import history from "../../data/history.json"
 import { getImageUrl } from '../../utils'
 
 const Expereance = () => {
@@ -10,13 +11,38 @@ const Expereance = () => {
             <div>
                 {
                     skills.map((skill, id) => {
-                        return <div key={idd}>
-                            <img src={skill.getImageUrl(skill.imggeSrc)} alt={skill.title} />
+                        return <div key={id}>
+                            <div><img src={skill.getImageUrl(skill.imggeSrc)} alt={skill.title} /></div>
+                            <p>{skills.title}</p>
                              </div>
                     })
                 }
             </div>
-            <ul></ul>
+            <ul>
+                {history.map((historyItem, id ) => {
+
+                    return(
+                        <li key={id}>
+                            <img src= {getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organisation} logo`} />
+                            <div>
+                                <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
+                                <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
+                                <ul>
+                                    {historyItem.expereances.map((expereance, id) =>{
+                                        return(
+                                            <li key={id}>
+                                                {expereance}
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                            </div>
+
+                        </li>
+                    )
+
+                })}
+            </ul>
         </div>
 
     </section>
