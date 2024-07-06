@@ -9,12 +9,12 @@ const Expereance = () => {
         <section className={styles.container} id='expereance'>
             <h2 className={styles.title}>Expereance</h2>
             <div className={styles.content}>
-                <div style={styles.skills}>
+                <div className={styles.skills}>
                     {
                         skills.map((skill, id) => {
                             return <div key={id} className={styles.skill}>
                                 <div className={styles.skillImageContainer}>
-                                    <img src={getImageUrl(skill.imgeSrc)} alt={skill.title} />
+                                    <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                                 </div>
                                 <p>{skill.title}</p>
                             </div>
