@@ -45,9 +45,13 @@
     padding: 25px;
     background-image: linear-gradient(
         90deg, 
-    rgba(165, 215, 232, 0.42) 0%
+    rgba(165, 215, 232, 0.42) 0%,
     rgba(255, 255, 255, 0) 100%
     );
+}
+
+.aboutImage:hover{
+    background-size: 100% 100%;
 }
 
 .aboutItem h3{
