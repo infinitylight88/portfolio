@@ -4,6 +4,7 @@ import Expereance from './Components/Expereance/Expereance'
 import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Projects from './Components/Projects/Projects'
+import Footer from './Components/Footer/Footer'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <About></About>
     <Expereance></Expereance>
     <Projects></Projects>
+    <Footer></Footer>
     
   </div> 
 }
