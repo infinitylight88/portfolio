@@ -2,6 +2,8 @@ import React from 'react'
 import { getImageUrl } from '../../utils'
 import styles from "../Header/Header.module.css"
 
+// header component
+
 const Header = () => {
   return (
     <section className={styles.container}>
