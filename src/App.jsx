@@ -5,7 +5,7 @@ import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Projects from './Components/Projects/Projects'
 import Footer from './Components/Footer/Footer'
-
+// Thank you JavaScript
 
 function App() {
 
